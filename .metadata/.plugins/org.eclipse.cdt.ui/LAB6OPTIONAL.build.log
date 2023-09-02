@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug__TI for project LAB6OPTIONAL ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB6OPTIONAL.out' is up to date.
+
+**** Build Finished ****

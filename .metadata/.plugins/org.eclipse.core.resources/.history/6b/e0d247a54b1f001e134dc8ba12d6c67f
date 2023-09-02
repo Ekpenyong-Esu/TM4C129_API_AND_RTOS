@@ -1,0 +1,8 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -ltivac_EK-TM4C1294XL_EduBPMKII_Screen -ltivac_EK-TM4C1294XL_Kentec_35_SPI -ltivac_EK-TM4C1294XL_SPI -ltivac_EK-TM4C1294XL_core
+

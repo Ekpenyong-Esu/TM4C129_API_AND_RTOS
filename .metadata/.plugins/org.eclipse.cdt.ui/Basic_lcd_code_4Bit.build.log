@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project Basic_lcd_code_4Bit ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'Basic_lcd_code_4Bit.out' is up to date.
+
+**** Build Finished ****

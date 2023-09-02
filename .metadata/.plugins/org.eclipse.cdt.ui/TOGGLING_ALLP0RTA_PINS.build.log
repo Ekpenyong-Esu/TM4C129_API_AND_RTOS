@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project TOGGLING_ALLP0RTA_PINS ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'TOGGLING_ALLP0RTA_PINS.out' is up to date.
+
+**** Build Finished ****

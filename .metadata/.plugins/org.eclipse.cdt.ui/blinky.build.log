@@ -1,0 +1,41 @@
+
+**** Build of configuration Debug for project blinky ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../blinky.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/tivaware_c_series_2_1_4_178" --advice:power=all -g --gcc --define=ccs="ccs" --define=PART_TM4C129ENCPDT --define=TARGET_IS_TM4C129_RA1 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="blinky.d_raw"  "../blinky.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'blinky.obj' failed
+"../blinky.c", line 96: error #20: identifier "dela" is undefined
+"../blinky.c", line 97: error #66: expected a ";"
+"../blinky.c", line 104: warning #12-D: parsing restarts here after previous syntax error
+"../blinky.c", line 73: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../blinky.c", line 109: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+2 errors detected in the compilation of "../blinky.c".
+gmake: *** [blinky.obj] Error 1
+Building file: "../buttons.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/tivaware_c_series_2_1_4_178" --advice:power=all -g --gcc --define=ccs="ccs" --define=PART_TM4C129ENCPDT --define=TARGET_IS_TM4C129_RA1 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="buttons.d_raw"  "../buttons.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'buttons.obj' failed
+"../buttons.c", line 35: fatal error #1965: cannot open source file "drivers/buttons.h"
+1 catastrophic error detected in the compilation of "../buttons.c".
+Compilation terminated.
+gmake: *** [buttons.obj] Error 1
+Building file: "../pinout.c"
+Invoking: ARM Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -O2 --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/tivaware_c_series_2_1_4_178" --advice:power=all -g --gcc --define=ccs="ccs" --define=PART_TM4C129ENCPDT --define=TARGET_IS_TM4C129_RA1 --diag_warning=225 --diag_wrap=off --display_error_number --gen_func_subsections=on --ual --preproc_with_compile --preproc_dependency="pinout.d_raw"  "../pinout.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'pinout.obj' failed
+"../pinout.c", line 35: fatal error #1965: cannot open source file "drivers/pinout.h"
+1 catastrophic error detected in the compilation of "../pinout.c".
+Compilation terminated.
+gmake: *** [pinout.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

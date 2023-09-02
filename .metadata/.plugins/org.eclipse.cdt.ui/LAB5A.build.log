@@ -1,0 +1,13 @@
+
+**** Build of configuration Debug for project LAB5A ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building target: "LAB5A.out"
+Invoking: Arm Linker
+"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=TARGET_IS_TM4C129_RA1 --define=DEBUG --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"LAB5A.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/lib" -i"C:/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="LAB5A_linkInfo.xml" --rom_model -o "LAB5A.out" "./FreeRtos_Example.obj" "./USART.obj" "./tm4c129encpdt_startup_ccs.obj" "./uartstdio.obj" "./FreeRTOS/croutine.obj" "./FreeRTOS/event_groups.obj" "./FreeRTOS/list.obj" "./FreeRTOS/queue.obj" "./FreeRTOS/tasks.obj" "./FreeRTOS/timers.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/port.obj" "./FreeRTOS/portable/CCS/ARM_CM4F/portasm.obj" "./FreeRTOS/portable/MemMang/heap_2.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../tm4c129encpdt.cmd"  -l"C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "LAB5A.out"
+ 
+
+**** Build Finished ****

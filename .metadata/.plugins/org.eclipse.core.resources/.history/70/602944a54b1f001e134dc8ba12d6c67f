@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+./LCD_Joystick.cpp 
+
+INO_SRCS += \
+../LCD_Joystick.ino 
+
+OBJS += \
+./LCD_Joystick.o 
+
+CPP_DEPS += \
+./LCD_Joystick.d 
+
+OBJS__QUOTED += \
+"LCD_Joystick.o" 
+
+CPP_DEPS__QUOTED += \
+"LCD_Joystick.d" 
+
+CPP_SRCS__QUOTED += \
+"./LCD_Joystick.cpp" \
+"LCD_Joystick.cpp" 
+
+

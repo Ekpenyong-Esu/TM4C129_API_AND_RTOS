@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project FOUR_LEDS_ONCE ****
+
+"C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'FOUR_LEDS_ONCE.out' is up to date.
+
+**** Build Finished ****
