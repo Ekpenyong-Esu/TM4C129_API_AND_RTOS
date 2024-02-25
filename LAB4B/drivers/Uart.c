@@ -6,10 +6,10 @@
  */
 #include <tm4c129encpdt.h>
 #include <stdint.h>
+#include "Uart.h"
 
-
-
-void UART_Init(void){
+void UART_Init(void)
+{
 
 
   // Activate the UART clock.

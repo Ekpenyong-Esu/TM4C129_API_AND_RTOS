@@ -22,7 +22,7 @@ int main(void)
 {
 
 
-    // configure the device pins
+    // configure the device pins  for GPIO pins
     PinoutSet(false, false);
 
     // Initialise the button driver
@@ -47,24 +47,28 @@ int main(void)
         GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, GPIO_PIN_1);
 
         // Delay the LED for 1000000
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
         // Set LED D1 low
         //LEDWrite(CLP_D1,0);
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0);
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0x0);
+
+        SysCtlDelay(500000);
 
 
         //Set LED D2 high
 
         // LEDWrite(CLP_D2,1);
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0);
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 1 << 0);
 
         // Delay for 1000000
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
         // Set the LED D2 low
         //LEDWrite(CLP_D2,0);GPIO_PIN_1
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+
+        SysCtlDelay(500000);
 
 
         // Set the LED D3 high
@@ -72,12 +76,13 @@ int main(void)
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
 
         //  Delay for 1000000
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
 
         // Set the LED D3 Low
         //LEDWrite(CLP_D3,0);
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0);
+        SysCtlDelay(500000);
 
 
         // Set LED D4 High
@@ -85,37 +90,37 @@ int main(void)
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 1);
 
         // Delay for 1000000
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
         // Set LED D4 Low
         //LEDWrite(CLP_D4,0);
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0,0);
 
-
+        SysCtlDelay(500000);
 
         // reverse LED D3 To High
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4);
 
         // Delay the LED D3
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
         // Reverse LED LOW
         GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0);
 
+        SysCtlDelay(500000);
 
 
         // reverse LED D2 High
         GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, GPIO_PIN_0 );
 
-
         // Delay the LED
-        SysCtlDelay(1000000);
+        SysCtlDelay(500000);
 
         // Reverse the LED  D2 Low
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, 0);
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0);
 
 
-
+        SysCtlDelay(500000);
 
 
 

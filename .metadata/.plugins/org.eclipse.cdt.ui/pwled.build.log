@@ -3,6 +3,36 @@
 
 "C:\\ti\\ccs1210\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
  
-gmake[1]: 'pwled.out' is up to date.
+Building file: "../tm4c129encpdt_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="C:/ti/tivaware_c_series_2_1_4_178" --include_path="C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl" --include_path="C:/ti/tivaware_c_series_2_1_4_178/inc" --include_path="C:/ti/tivaware_c_series_2_1_4_178/utils" --include_path="C:/Users/mahon/workspace_v12/pwled" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c129encpdt_startup_ccs.d_raw"  "../tm4c129encpdt_startup_ccs.c"
+Finished building: "../tm4c129encpdt_startup_ccs.c"
+ 
+Building file: "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/buttons.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="C:/ti/tivaware_c_series_2_1_4_178" --include_path="C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl" --include_path="C:/ti/tivaware_c_series_2_1_4_178/inc" --include_path="C:/ti/tivaware_c_series_2_1_4_178/utils" --include_path="C:/Users/mahon/workspace_v12/pwled" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="drivers/buttons.d_raw" --obj_directory="drivers"  "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/buttons.c"
+Finished building: "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/buttons.c"
+ 
+Building file: "../controlled.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="C:/ti/tivaware_c_series_2_1_4_178" --include_path="C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl" --include_path="C:/ti/tivaware_c_series_2_1_4_178/inc" --include_path="C:/ti/tivaware_c_series_2_1_4_178/utils" --include_path="C:/Users/mahon/workspace_v12/pwled" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="controlled.d_raw"  "../controlled.c"
+Finished building: "../controlled.c"
+ 
+Building file: "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/pinout.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="C:/ti/tivaware_c_series_2_1_4_178" --include_path="C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl" --include_path="C:/ti/tivaware_c_series_2_1_4_178/inc" --include_path="C:/ti/tivaware_c_series_2_1_4_178/utils" --include_path="C:/Users/mahon/workspace_v12/pwled" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="drivers/pinout.d_raw" --obj_directory="drivers"  "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/pinout.c"
+Finished building: "C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/pinout.c"
+ 
+Building file: "C:/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --include_path="C:/ti/tivaware_c_series_2_1_4_178" --include_path="C:/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl" --include_path="C:/ti/tivaware_c_series_2_1_4_178/inc" --include_path="C:/ti/tivaware_c_series_2_1_4_178/utils" --include_path="C:/Users/mahon/workspace_v12/pwled" --include_path="C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "C:/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.c"
+Finished building: "C:/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.c"
+ 
+Building target: "pwled.out"
+Invoking: Arm Linker
+"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -O2 --define=TARGET_IS_TM4C129_RA1 --define=ccs="ccs" --define=PART_TM4C129ENCPDT -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"pwled.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="pwled_linkInfo.xml" --rom_model -o "pwled.out" "./controlled.obj" "./tm4c129encpdt_startup_ccs.obj" "./uartstdio.obj" "./drivers/buttons.obj" "./drivers/pinout.obj" "../tm4c129encpdt.cmd"  -l"C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib" -llibc.a 
+<Linking>
+Finished building target: "pwled.out"
+ 
 
 **** Build Finished ****

@@ -30,16 +30,6 @@
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/ti/tivaware_c_series_2_1_4_178/utils/uartstdio.c</locationURI>
 		</link>
-		<link>
-			<name>drivers/buttons.c</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/buttons.c</locationURI>
-		</link>
-		<link>
-			<name>drivers/pinout.c</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/ti/tivaware_c_series_2_1_4_178/examples/boards/ek-tm4c129exl/drivers/pinout.c</locationURI>
-		</link>
 	</linkedResources>
 	<variableList>
 		<variable>

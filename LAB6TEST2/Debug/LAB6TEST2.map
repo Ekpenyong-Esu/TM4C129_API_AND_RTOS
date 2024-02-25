@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Fri Jul 14 17:25:49 2023
+>> Linked Thu Oct 26 19:44:47 2023
 
 OUTPUT FILE NAME:   <LAB6TEST2.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 00004545
@@ -202,7 +202,7 @@ MODULE SUMMARY
     +--+-------------------------------+-------+---------+---------+
        Total:                          1248    740       0      
                                                                 
-    C:\ti\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+    C:\ti\ccs1210\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
        _printfi.c.obj                  4851    0         0      
        fd_add_t2.asm.obj               438     0         0      
        fd_div_t2.asm.obj               310     0         0      

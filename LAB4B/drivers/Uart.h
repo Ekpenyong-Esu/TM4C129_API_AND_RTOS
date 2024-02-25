@@ -1,5 +1,5 @@
 #include <stdint.h>
-#include <tm4c129encpdt.h>
+#include "tm4c129encpdt.h"
 
 
 /*
@@ -27,7 +27,7 @@ void USART_reset();
 char USART_getChar();
 void USART_putChar(char c);
 void USART_putString(char *string);
-char USART_getString(char* ptr_string, int size);
+void USART_getString(char* ptr_string, int size);
 void USART_end();
 
 

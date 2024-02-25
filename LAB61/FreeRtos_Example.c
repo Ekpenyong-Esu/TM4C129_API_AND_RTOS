@@ -13,9 +13,10 @@
 #include "semphr.h"
 
 
-int stockCount = 0;
-const int stockSize = 10;
+int stockCount = 0;      //it is use to count the numbers of semaphore taken
+const int stockSize = 10; //  number of semaphore created
 char buffer[11];
+
 uint32_t system_clock;
 
 SemaphoreHandle_t xSemUART = 0;
@@ -46,7 +47,7 @@ void ConfigureUART(uint32_t system_clock, uint32_t baud_rate)
 void UARTprintStr(char *str, bool continued)
 {
     if(continued)
-        UARTCharPutNonBlocking(UART0_BASE, '\r');
+        UARTCharPutNonBlocking(UART0_BASE, '\r'); // interrupt
     while(*str)
         UARTCharPut(UART0_BASE,*str++);
 }
@@ -54,13 +55,14 @@ void UARTprintStr(char *str, bool continued)
 
 // THIS BLOCK IS USED TO PRODUCE AN ITEM TO FILL THE BUFFER
 
-void TaskProducer(void* pvParameters)
+void TaskProducer(void* pvParameters) // this
 {
    // COUNTING SEMAPHORE HERE ENSURES THAT THE PRODUCER WILL NOT PRODUCE AND ITEM WHEN THE BUFFER IS FULL
     while(1)
     {
+
         // IF THERE IS NO THIS WHILE SEMARPHORE GIVE, THE BUFFER WILL OVERFLOW AND LOST INFORMATION.
-      while(!xSemaphoreGive(xSemCount)){};    //HENCE COMENTING OR REMOVING THIS LINE WILL SHOW PRODUCER PROBLEM
+        while(!xSemaphoreGive(xSemCount)){};    //HENCE COMENTING OR REMOVING THIS LINE WILL SHOW PRODUCER PROBLEM
         if (stockCount != stockSize)
         {
             buffer[stockCount++] = '1';
@@ -90,6 +92,7 @@ void TaskConsumer(void* pvParameters)
     //  THE COUNTING SEMAPHORE MAKES SURE THAT THE CONSUMER WILL NOT CONSUME AN ITEM WHEN THE BUFFER IS EMPTY
     while(1)
     {
+
        while(!xSemaphoreTake(xSemCount, 0)){}; //HENCE COMENTING THIS LINE WILL GIVE RISE TO CONSUMER PROBLEM
         if (stockCount != 0)
         {
@@ -114,7 +117,7 @@ void TaskConsumer(void* pvParameters)
 int main(void)
 {
     // SETTING UP THE SYSTEM CLOCK
-    system_clock = MAP_SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
+    system_clock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ |
                                                  SYSCTL_OSC_MAIN |
                                                  SYSCTL_USE_PLL |
                                                  SYSCTL_CFG_VCO_480), 120000000);
@@ -139,6 +142,7 @@ int main(void)
     //WE CREATE TASK
     xTaskCreate(TaskProducer, "Task Producer", 1000, 0, 1, &xHandleTaskProd);
     xTaskCreate(TaskConsumer, "Task Consumer", 1000, 0, 1, &xHandleTaskCons);
+
 
     // HAND OVER TH PROCESS TO THE SCHEDULER
     vTaskStartScheduler();

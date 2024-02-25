@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Thu May 18 21:15:45 2023
+>> Linked Thu Oct 26 19:43:27 2023
 
 OUTPUT FILE NAME:   <BitwiseOperator.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 00000315

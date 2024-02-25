@@ -121,7 +121,8 @@ int main(void)
 
 
         //Turn of the LED if PWM less than or equall to zero, and set the pwmValue to 1
-        if(pwmValue <= 0){
+        if(pwmValue <= 0)
+        {
             PWMOutputState(PWM0_BASE, PWM_OUT_2_BIT, false);
             pwmValue = 1;
 
@@ -134,7 +135,7 @@ int main(void)
         }
 
         // SEtting a condition if is IMPOSSible to get a pwmValue of 100, we find the nearest value approximation
-        if (pwmValue >= 97){
+        if (pwmValue >= 84){
             pwmValue = 100;
 
         }

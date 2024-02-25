@@ -44,8 +44,8 @@ int main(void)
     systemClock = SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480), 16000);
 
     static char buffer[8];
-    long val;
-    int on = 0;
+    long val = 0;
+    //int on = 0;
 
     pwm_word = systemClock / 200;
 
@@ -71,6 +71,10 @@ int main(void)
     while(1)
         {
 
+        //Displaying the User input by
+        UARTprintf("Enter a value: ");
+
+
         //Waiting and getting input from user.
         UARTgets(buffer,sizeof(buffer));
 
@@ -85,35 +89,41 @@ int main(void)
 
         //Setting the special condition from the Assignment from 0% to 100%
         //Hence, if the input is less than zero OR greater than 100 print INVALID INPUT.
-        if(val < 0 || val > 100 &&  on ==1){
+        // Input validation
+        if(val < 0 || val > 100)
+        {
+          // Invalid input
+          UARTprintf("Invalid input");
 
-
-            // Printing out the users input
-            UARTprintf("invalid input \n");
-
-        }else{
-
-            // Else if the user input is within the range of 0 to 100 Set pwm_word get the pwm output
-            // hence the the width is pwm_word * (0.01 * val)
-            PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, pwm_word*(0.01*val));
+          continue; // skip to next loop iteration
         }
 
-        //Setting PWM special case in a situation where users input = o
-        if (val == 0){
+        // Else if the user input is within the range of 0 to 100 Set pwm_word get the pwm output
+        // hence the the width is pwm_word * (0.01 * val)
+        PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, pwm_word*(0.01*val));
 
+
+        //Setting PWM special case in a situation where users input = o
+        if (val == 0)
+        {
 
             // If the user input = 0, PWM_OUT_2_BIT = 0 ( that is LOW)
             PWMOutputState(PWM0_BASE, PWM_OUT_2_BIT, false);
 
             // But if users input = 100 the PWM brightens the LED
-        }else if(val == 100){
-
+        }
+        else if(val == 100)
+        {
 
             // Setting the State as TRUE or 1
             PWMOutputState(PWM0_BASE, PWM_OUT_2_BIT, true);
 
-
         }
+        else
+        {
+            PWMOutputState(PWM0_BASE, PWM_OUT_2_BIT, true);
+        }
+
 
     }
 }

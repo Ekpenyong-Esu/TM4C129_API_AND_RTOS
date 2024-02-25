@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Sat Jun 10 12:12:45 2023
+>> Linked Thu Oct 26 19:43:23 2023
 
 OUTPUT FILE NAME:   <Basic_lcd_coding.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 000003f5

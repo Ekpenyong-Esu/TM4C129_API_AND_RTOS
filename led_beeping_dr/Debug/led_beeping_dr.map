@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Fri Jul 14 17:26:00 2023
+>> Linked Thu Oct 26 19:45:31 2023
 
 OUTPUT FILE NAME:   <led_beeping_dr.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs"  address: 000002b1
@@ -63,7 +63,7 @@ MODULE SUMMARY
     +--+-------------------------------+------+---------+---------+
        Total:                          180    520       0      
                                                                
-    C:\ti\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+    C:\ti\ccs1210\ccs\tools\compiler\ti-cgt-arm_20.2.7.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
        boot_cortex_m.c.obj             44     0         0      
        exit.c.obj                      4      0         0      
        pre_init.c.obj                  4      0         0      
